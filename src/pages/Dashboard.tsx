@@ -60,7 +60,7 @@ const Dashboard: React.FC = () => {
           )
         }}
       />
-
+{/* 
       <div className="divider" />
 
       <Bookmarks
@@ -78,7 +78,7 @@ const Dashboard: React.FC = () => {
             return [...array]
           })
         }}
-      />
+      /> */}
     </div>
   )
 }

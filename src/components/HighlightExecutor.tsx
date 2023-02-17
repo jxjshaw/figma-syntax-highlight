@@ -3,6 +3,7 @@ import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
 import colorSchemaList from '../consts/colorSchemalist'
 import languageList from '../consts/languagelist'
 import Select from './Select'
+import snowsight from '../assets/colorSchema/schemas/snowsight'
 
 interface Props {
   schemaAndLanguage: SchemaAndLanguage
@@ -45,6 +46,23 @@ const HighlightExecutor: React.FC<Props> = ({
             }}
           />
         </div>
+      </div>
+      <div className="flex">
+          <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {Object.entries(snowsight).map(([key, value]) => (
+        <div
+          key={key}
+          style={{
+            backgroundColor: `rgb(${value.color.r * 255}, ${value.color.g * 255}, ${value.color.b * 255})`,
+            width: '20px',
+            height: '20px',
+            borderRadius: '50%',
+            margin: '5px',
+          }}
+        />
+      ))}
+    </div>
+        
       </div>
       <button
         className="button button--secondary buttonFullWidth cursor"
