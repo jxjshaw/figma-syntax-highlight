@@ -1,2 +1,1 @@
-# figma-syntax-highlight
-hacked plugin to replace syntax highlight colors based on https://github.com/ixtgorilla/figma-code-highlighter
+modified version of https://github.com/jxjshaw/figma-syntax-highlight.git
