@@ -1,0 +1,50 @@
+# os artifacts
+# os artifacts
+*.DS_Store
+
+# editors
+.vimrc
+*.sublime-workspace
+*.sublime-project
+.sessions
+.idea
+*.swp
+snapps.iml
+
+# docker volumes
+/data
+schemaWithData.sql
+.pgpass
+
+yarn-error.log
+built
+.awcache
+node_modules
+*.log
+*.js.map
+package-lock.json
+
+.scannerwork
+eslint.json
+coverage
+coverage.out
+devvm
+.yarn
+output
+.nyc*
+junit.xml
+Godeps
+*.pid
+health
+.last-build-prod-local
+storybook-static
+logs
+jest-tmp
+.packagejsons
+*.zip
+runtime.env.*.local
+src/coverage*.out*
+.fastrefresh
+src-tmp
+build/nodejs
+*.tsbuildinfo

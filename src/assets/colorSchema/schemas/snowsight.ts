@@ -1,18 +1,147 @@
+
+const colors = {
+  grey: {
+    r: 101,
+    g: 103,
+    b: 108
+  },
+  lightgrey: {
+    r: 174,
+    g: 176,
+    b: 179
+  },
+  green: {
+    r: 78,
+    g: 182,
+    b: 133,
+  },
+  blue: {
+    r: 8,
+    g: 91,
+    b: 215
+  },
+  orange: {
+    r: 249,
+    g: 155,
+    b: 21
+  },
+  red: {
+    r: 191,
+    g: 8,
+    b: 34
+  },
+  pink: {
+    r: 201,
+    g: 38,
+    b: 175
+  },
+  purple: {
+    r: 151,
+    g: 18,
+    b: 232
+  }
+  
+}
+
+const colorsMapped2 = {
+  grey: {
+    r: 101/255,
+    g: 103/255,
+    b: 108/255
+  },
+  lightgrey: {
+    r: 174/255,
+    g: 176/255,
+    b: 179/255
+  },
+  green: {
+    r: 78/255,
+    g: 182/255,
+    b: 133/255
+  },
+  blue: {
+    r: 8/255,
+    g: 91/255,
+    b: 215/255
+  },
+  orange: {
+    r: 249/255,
+    g: 155/255,
+    b: 21/255
+  },
+  red: {
+    r: 191/255,
+    g: 8/255,
+    b: 34/255
+  },
+  pink: {
+    r: 201/255,
+    g: 38/255,
+    b: 175/255
+  },
+  purple: {
+    r: 151/255,
+    g: 18/255,
+    b: 232/255
+  }
+}
+
+
+const colorsMapped = {
+  grey: {
+    r: 101/255,
+    g: 103/255,
+    b: 108/255
+  },
+  lightgrey: {
+    r: 174/255,
+    g: 176/255,
+    b: 179/255
+  },
+  green: {
+    r: 12/255,
+    g: 126/255,
+    b: 94/255
+  },
+  blue: {
+    r: 8/255,
+    g: 91/255,
+    b: 215/255
+  },
+  orange: {
+    r: 138/255,
+    g: 109/255,
+    b: 0/255
+  },
+  red: {
+    r: 191/255,
+    g: 8/255,
+    b: 34/255
+  },
+  pink: {
+    r: 201/255,
+    g: 38/255,
+    b: 175/255
+  },
+  
+}
+
+
 const snowsight = {
     hljs: {
       type: 'SOLID',
       color: {
-        r: 0.396078431372549,
-        g: 0.4823529411764706,
-        b: 0.5137254901960784,
+        r: colorsMapped.grey.r,
+        g: colorsMapped.grey.g,
+        b: colorsMapped.grey.b,
       },
     },
     'hljs-comment': {
       type: 'SOLID',
       color: {
-        r: 0.5764705882352941,
-        g: 0.6313725490196078,
-        b: 0.6313725490196078,
+        r: colorsMapped.lightgrey.r,
+        g: colorsMapped.lightgrey.g,
+        b: colorsMapped.lightgrey.b,
       },
     },
     'hljs-quote': {
@@ -25,7 +154,9 @@ const snowsight = {
     },
     'hljs-keyword': {
       type: 'SOLID',
-      color: { r: 0.5215686274509804, g: 0.6, b: 0 },
+      color: {         r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b, },
     },
     'hljs-selector-tag': {
       type: 'SOLID',
@@ -38,89 +169,89 @@ const snowsight = {
     'hljs-number': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
     'hljs-string': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-metahljs-meta-string': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-literal': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-doctag': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-regexp': {
       type: 'SOLID',
       color: {
-        r: 0.16470588235294117,
-        g: 0.6313725490196078,
-        b: 0.596078431372549,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-title': {
       type: 'SOLID',
       color: {
-        r: 0.14901960784313725,
-        g: 0.5450980392156862,
-        b: 0.8235294117647058,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-section': {
       type: 'SOLID',
       color: {
-        r: 0.14901960784313725,
-        g: 0.5450980392156862,
-        b: 0.8235294117647058,
+        r: colorsMapped.green.r,
+        g: colorsMapped.green.g,
+        b: colorsMapped.green.b,
       },
     },
     'hljs-name': {
       type: 'SOLID',
       color: {
-        r: 0.14901960784313725,
-        g: 0.5450980392156862,
-        b: 0.8235294117647058,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
     'hljs-selector-id': {
       type: 'SOLID',
       color: {
-        r: 0.14901960784313725,
-        g: 0.5450980392156862,
-        b: 0.8235294117647058,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
     'hljs-selector-class': {
       type: 'SOLID',
       color: {
-        r: 0.14901960784313725,
-        g: 0.5450980392156862,
-        b: 0.8235294117647058,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-attribute': {
@@ -190,65 +321,65 @@ const snowsight = {
     'hljs-selector-attr': {
       type: 'SOLID',
       color: {
-        r: 0.796078431372549,
-        g: 0.29411764705882354,
-        b: 0.08627450980392157,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-selector-pseudo': {
       type: 'SOLID',
       color: {
-        r: 0.796078431372549,
-        g: 0.29411764705882354,
-        b: 0.08627450980392157,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-link': {
       type: 'SOLID',
       color: {
-        r: 0.796078431372549,
-        g: 0.29411764705882354,
-        b: 0.08627450980392157,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-built_in': {
       type: 'SOLID',
       color: {
-        r: 0.8627450980392157,
-        g: 0.19607843137254902,
-        b: 0.1843137254901961,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-deletion': {
       type: 'SOLID',
       color: {
-        r: 0.8627450980392157,
-        g: 0.19607843137254902,
-        b: 0.1843137254901961,
+        r: colorsMapped.blue.r,
+        g: colorsMapped.blue.g,
+        b: colorsMapped.blue.b,
       },
     },
     'hljs-formula': {
       type: 'SOLID',
       color: {
-        r: 0.396078431372549,
-        g: 0.4823529411764706,
-        b: 0.5137254901960784,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
     'hljs-emphasis': {
       type: 'SOLID',
       color: {
-        r: 0.396078431372549,
-        g: 0.4823529411764706,
-        b: 0.5137254901960784,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
     'hljs-strong': {
       type: 'SOLID',
       color: {
-        r: 0.396078431372549,
-        g: 0.4823529411764706,
-        b: 0.5137254901960784,
+        r: colorsMapped.orange.r,
+        g: colorsMapped.orange.g,
+        b: colorsMapped.orange.b,
       },
     },
   }
