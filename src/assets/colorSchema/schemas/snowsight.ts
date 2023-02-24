@@ -43,7 +43,7 @@ const colors = {
   
 }
 
-const colorsMapped2 = {
+const colorsMapped = {
   grey: {
     r: 101/255,
     g: 103/255,
@@ -60,9 +60,9 @@ const colorsMapped2 = {
     b: 133/255
   },
   blue: {
-    r: 8/255,
-    g: 91/255,
-    b: 215/255
+    r: 64/255,
+    g: 140/255,
+    b: 255/255
   },
   orange: {
     r: 249/255,
@@ -87,7 +87,7 @@ const colorsMapped2 = {
 }
 
 
-const colorsMapped = {
+const colorsMapped2 = {
   grey: {
     r: 101/255,
     g: 103/255,
@@ -104,9 +104,9 @@ const colorsMapped = {
     b: 94/255
   },
   blue: {
-    r: 8/255,
-    g: 91/255,
-    b: 215/255
+    r: 64/255,
+    g: 140/255,
+    b: 255/255
   },
   orange: {
     r: 138/255,

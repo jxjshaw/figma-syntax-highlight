@@ -5,6 +5,7 @@
 .flex {
   display: flex;
   padding-bottom: 8px;
+  justify-content: center;
 }
 
 .flexChild:first-child {
@@ -20,6 +21,7 @@
 .buttonFullWidth {
   display: block;
   width: 100%;
+  margin: 8px 0px;
 }
 
 .boxPadding {

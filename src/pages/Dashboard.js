@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import Bookmarks from '../components/Bookmarks';
 import HighlightExecutor from '../components/HighlightExecutor';
 const Dashboard = () => {
     const [schemaAndLanguage, setSchemaAndLanguage] = useState({
@@ -38,18 +37,6 @@ const Dashboard = () => {
                 setSchemaAndLanguage(Object.assign(schemaAndLanguage, {
                     language: event.target.value,
                 }));
-            } }),
-        React.createElement("div", { className: "divider" }),
-        React.createElement(Bookmarks, { schemaAndLanguage: schemaAndLanguage, bookmarkedSchemaAndLanguages: bookmarkedSchemaAndLanguages, createBookmark: schemaAndLanguage => {
-                setBookmarkedSchemaAndLanguages(array => {
-                    const obj = Object.assign({}, schemaAndLanguage);
-                    return [obj, ...array];
-                });
-            }, destroyBookmark: index => {
-                setBookmarkedSchemaAndLanguages(array => {
-                    array.splice(index, 1);
-                    return [...array];
-                });
             } })));
 };
 export default Dashboard;
