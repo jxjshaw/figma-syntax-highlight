@@ -1,4 +1,4 @@
-modified version of https://github.com/jxjshaw/figma-syntax-highlight.git
+this is a modified figma syntax highlighter plugin tailored for sql and python syntax highlighting. i created it for personal use but feel free to use it in your design workflow too
 
 Installation instructions:
 
