@@ -1,4 +1,4 @@
-this is a modified figma syntax highlighter plugin tailored for sql and python syntax highlighting. i created it for personal use but feel free to use it in your design workflow too
+This is a modified figma syntax highlighter plugin tailored for sql and python syntax highlighting. i created it for personal use but feel free to use it in your design workflow too
 
 Installation instructions:
 
