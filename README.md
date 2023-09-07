@@ -3,7 +3,7 @@ this is a modified figma syntax highlighter plugin tailored for sql and python s
 Installation instructions:
 
 1. Clone this repo
-2. Install dependencies by running `yarn`
+2. Install dependencies by navigating to the repository folder and running `yarn` (make sure you have node and yarn installed)
 3. Navigate to figma > plugins > development > import plugin from manifest
 4. Select the manifest.json file from the repository folder
 
