@@ -48,3 +48,13 @@ src/coverage*.out*
 src-tmp
 build/nodejs
 *.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# adding this because we use yarn instead of npm for this project
+# however muhammad is still using npm so this allows him to run it on npm
+# without pushing the package-lock.json file to vercel which gets confused
+# when it sees both yarn.lock and package-lock.json
+package-lock.json
+

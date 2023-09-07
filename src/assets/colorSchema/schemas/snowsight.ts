@@ -147,9 +147,9 @@ const snowsight = {
     'hljs-quote': {
       type: 'SOLID',
       color: {
-        r: 0.5764705882352941,
-        g: 0.6313725490196078,
-        b: 0.6313725490196078,
+        r: colorsMapped.purple.r,
+        g: colorsMapped.purple.g,
+        b: colorsMapped.purple.b,
       },
     },
     'hljs-keyword': {
